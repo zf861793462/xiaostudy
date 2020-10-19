@@ -1,2 +1,11 @@
 <!--home.wxml-->
-<text class="colora">你好</text>
+<text class="colora">数据展示</text>
+<view>hello {{content}}</view>
+<text class="colora">列表展示</text>
+<view wx:for="{{movies}}" wx:key="index">{{item}}</view>
+<text class="colora">修改数据</text>
+<view>
+  当前计数:{{counter}}
+</view>
+<button size="mini" bind:tap="increment">+</button>
+<button size="mini" bind:tap="decrement">-</button>
